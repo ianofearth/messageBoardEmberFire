@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'chat-messages',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://glaring-heat-9233.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
